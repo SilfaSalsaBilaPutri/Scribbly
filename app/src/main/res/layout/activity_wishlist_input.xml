@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="250dp"
+                android:background="@null"
+                android:contentDescription="Icon Back"
+                android:src="@drawable/icon_backpink" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFB6C1"
+                android:text="Save" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/persegipanjang"
+            android:src="@drawable/addImage" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:hint="Savings Name"
+            android:backgroundTint="#FFB6C1"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:hint="Savings Target"
+            android:inputType="number"
+            android:backgroundTint="#FFB6C1"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:hint="Indonesia Rupiah (Rp)"
+            android:backgroundTint="#FFB6C1"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filling Plan"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily" />
+
+            <RadioButton
+                android:id="@+id/rbWeekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly" />
+
+            <RadioButton
+                android:id="@+id/rbMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:hint="Filling Nominal"
+            android:inputType="number"
+            android:backgroundTint="#FFB6C1"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Still confused about filling out a savings plan?" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate With Target Calculator"
+            android:textColor="#FF69B4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:layout_marginTop="16dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textOn="Sunday"
+                android:textOff="Sunday"/>
+
+            <ToggleButton
+                android:id="@+id/mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textOn="Monday"
+                android:textOff="Monday"/>
+
+            <ToggleButton
+                android:id="@+id/tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textOn="Tuesday"
+                android:textOff="Tuesday"/>
+
+            <ToggleButton
+                android:id="@+id/wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textOn="Wednesday"
+                android:textOff="Wednesday"/>
+
+            <ToggleButton
+                android:id="@+id/thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textOn="Thursday"
+                android:textOff="Thursday"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
